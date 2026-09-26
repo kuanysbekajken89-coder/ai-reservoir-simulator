@@ -142,9 +142,9 @@ with col2:
     fig_dyn.add_trace(go.Scatter(x=months, y=water_cuts, name="Water Cut (%)", line=dict(color="blue", width=2, dash="dash"), yaxis="y2"))
     
     fig_dyn.update_layout(
-        xaxis=dict(title="Time (Months)"),
-        yaxis=dict(title="Oil Production Rate (m³/day)", titlefont=dict(color="green")),
-        yaxis2=dict(title="Water Cut (%)", titlefont=dict(color="blue"), overlaying="y", side="right"),
+        xaxis=dict(title=dict(text="Time (Months)")),
+        yaxis=dict(title=dict(text="Oil Production Rate (m³/day)", font=dict(color="green"))),
+        yaxis2=dict(title=dict(text="Water Cut (%)", font=dict(color="blue")), overlaying="y", side="right"),
         height=450,
         margin=dict(l=10, r=10, t=30, b=10),
         legend=dict(x=0.01, y=0.99)
